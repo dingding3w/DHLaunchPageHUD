@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [DHLaunchPageHUD dh_initWithFrame:[[UIScreen mainScreen] bounds] window:self.window image:[UIImage imageNamed:@"LaunchPageImage.bundle/DHLaunchPageHUD.png"] animationStyle:DDLaunchPageAnimationStyleFadeOut];
+    [[DHLaunchPageHUD alloc] initWithFrame:[[UIScreen mainScreen] bounds] window:self.window image:[UIImage imageNamed:@"LaunchPageImage.bundle/DHLaunchPageHUD.png"] animationStyle:DDLaunchPageAnimationStyleFadeOut];
     return YES;
 }
 

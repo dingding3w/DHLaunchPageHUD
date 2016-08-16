@@ -16,9 +16,10 @@
 		1839008B1D471DA30052D6B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183900871D471DA30052D6B4 /* AppDelegate.m */; };
 		1839008C1D471DA30052D6B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839008A1D471DA30052D6B4 /* ViewController.m */; };
 		1839008F1D4724FE0052D6B4 /* view_bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1839008E1D4724FE0052D6B4 /* view_bg_image.png */; };
-		183900961D4725560052D6B4 /* CALayer+DHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 183900921D4725560052D6B4 /* CALayer+DHExtension.m */; };
-		183900971D4725560052D6B4 /* DHLaunchPageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 183900941D4725560052D6B4 /* DHLaunchPageHUD.m */; };
 		183900981D4725560052D6B4 /* LaunchPageImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 183900951D4725560052D6B4 /* LaunchPageImage.bundle */; };
+		18AB9D161D62B9D600E54001 /* CALayer+DHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9D111D62B9D600E54001 /* CALayer+DHExtension.m */; };
+		18AB9D171D62B9D600E54001 /* DHAnimationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9D131D62B9D600E54001 /* DHAnimationOperation.m */; };
+		18AB9D181D62B9D600E54001 /* DHLaunchPageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB9D151D62B9D600E54001 /* DHLaunchPageHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +57,13 @@
 		183900891D471DA30052D6B4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1839008A1D471DA30052D6B4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1839008E1D4724FE0052D6B4 /* view_bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_bg_image.png; sourceTree = "<group>"; };
-		183900911D4725560052D6B4 /* CALayer+DHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+DHExtension.h"; sourceTree = "<group>"; };
-		183900921D4725560052D6B4 /* CALayer+DHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+DHExtension.m"; sourceTree = "<group>"; };
-		183900931D4725560052D6B4 /* DHLaunchPageHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHLaunchPageHUD.h; sourceTree = "<group>"; };
-		183900941D4725560052D6B4 /* DHLaunchPageHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHLaunchPageHUD.m; sourceTree = "<group>"; };
 		183900951D4725560052D6B4 /* LaunchPageImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LaunchPageImage.bundle; sourceTree = "<group>"; };
+		18AB9D101D62B9D600E54001 /* CALayer+DHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+DHExtension.h"; sourceTree = "<group>"; };
+		18AB9D111D62B9D600E54001 /* CALayer+DHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+DHExtension.m"; sourceTree = "<group>"; };
+		18AB9D121D62B9D600E54001 /* DHAnimationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAnimationOperation.h; sourceTree = "<group>"; };
+		18AB9D131D62B9D600E54001 /* DHAnimationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAnimationOperation.m; sourceTree = "<group>"; };
+		18AB9D141D62B9D600E54001 /* DHLaunchPageHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHLaunchPageHUD.h; sourceTree = "<group>"; };
+		18AB9D151D62B9D600E54001 /* DHLaunchPageHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHLaunchPageHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +190,12 @@
 		183900901D4725560052D6B4 /* DHLaunchPageHUD */ = {
 			isa = PBXGroup;
 			children = (
-				183900931D4725560052D6B4 /* DHLaunchPageHUD.h */,
-				183900941D4725560052D6B4 /* DHLaunchPageHUD.m */,
-				183900911D4725560052D6B4 /* CALayer+DHExtension.h */,
-				183900921D4725560052D6B4 /* CALayer+DHExtension.m */,
+				18AB9D141D62B9D600E54001 /* DHLaunchPageHUD.h */,
+				18AB9D151D62B9D600E54001 /* DHLaunchPageHUD.m */,
+				18AB9D121D62B9D600E54001 /* DHAnimationOperation.h */,
+				18AB9D131D62B9D600E54001 /* DHAnimationOperation.m */,
+				18AB9D101D62B9D600E54001 /* CALayer+DHExtension.h */,
+				18AB9D111D62B9D600E54001 /* CALayer+DHExtension.m */,
 				183900951D4725560052D6B4 /* LaunchPageImage.bundle */,
 			);
 			name = DHLaunchPageHUD;
@@ -330,10 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1839008C1D471DA30052D6B4 /* ViewController.m in Sources */,
-				183900961D4725560052D6B4 /* CALayer+DHExtension.m in Sources */,
+				18AB9D181D62B9D600E54001 /* DHLaunchPageHUD.m in Sources */,
+				18AB9D161D62B9D600E54001 /* CALayer+DHExtension.m in Sources */,
 				1839008B1D471DA30052D6B4 /* AppDelegate.m in Sources */,
+				18AB9D171D62B9D600E54001 /* DHAnimationOperation.m in Sources */,
 				183900531D471D420052D6B4 /* main.m in Sources */,
-				183900971D4725560052D6B4 /* DHLaunchPageHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
