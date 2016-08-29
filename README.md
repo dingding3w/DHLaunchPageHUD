@@ -24,15 +24,16 @@
 ####2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
 ```objc
 NSString *adImageJPGUrl = @"http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg";
-    NSString *adimageGIFUrl = @"http://img.ui.cn/data/file/3/4/6/210643.gif";
-    NSString *adImageJPGPath = [[NSBundle mainBundle] pathForResource:@"adImage2" ofType:@"jpg"];
-    NSString *adImageGifPath = [[NSBundle mainBundle] pathForResource:@"adImage3" ofType:@"gif"];
-    DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adImageGifPath hideSkipButton:NO launchAdClickBlock:^{
+NSString *adimageGIFUrl = @"http://img.ui.cn/data/file/3/4/6/210643.gif";
+NSString *adImageJPGPath = [[NSBundle mainBundle] pathForResource:@"adImage2" ofType:@"jpg"];
+NSString *adImageGifPath = [[NSBundle mainBundle] pathForResource:@"adImage3" ofType:@"gif"];
+
+DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adImageGifPath hideSkipButton:NO launchAdClickBlock:^{
         NSLog(@"点了广告图片");
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     }];
 ```
-
+####说明:图片来源于网络,如有设计版权会马上删除,敬请谅解;
 ### 可能会用到的代码说明:
 
 ## (二)DHLaunchDfPageHUD - 无广告(Df)
