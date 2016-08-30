@@ -1,5 +1,6 @@
 # DHLaunchPageHUD
-###一行代码迅速集成APP启动页,包括有广告(Ad)和无广告(Df)两种样式,省掉冗余的代码,集成性高,使用方便;
+### 一行代码迅速集成APP启动页,包括有广告(Ad)和无广告(Df)两种样式,省掉冗余的代码,集成性高,使用方便;
+####声明: 部分图片来源于网络,如有涉及版权会马上删除,敬请谅解;
 ## (一)DHLaunchAdPageHUD - 有广告(Ad)
 ### 效果图展示:
 
@@ -20,7 +21,7 @@
 ```
 
 ### 使用方式:
-####1.下载项目或者下载项目中的DHLaunchAdPageHUD文件,将下载好的DHLaunchAdPageHUD文件拖拽到自己的工程文件夹中,并在自己添加广告启动页的类中导入#import "DHLaunchAdPageHUD.h"头文件;
+####1.下载项目或者下载项目中的DHLaunchAdPageHUD文件,将下载好的DHLaunchAdPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchAdPageHUD.h"头文件;
 ####2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
 ```objc
 NSString *adImageJPGUrl = @"http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg";
@@ -33,15 +34,58 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     }];
 ```
-####说明:图片来源于网络,如有设计版权会马上删除,敬请谅解;
+
 ### 可能会用到的代码说明:
 
 ## (二)DHLaunchDfPageHUD - 无广告(Df)
 ### 效果图展示:
 
 ### 方法说明:
+```objc
+/**
+ *  DHLaunchDfPageHUD
+ *
+ *  @param frame  位置大小
+ *  @param window 主窗口
+ *  @param image  启动图片
+ *  @param style  启动样式
+ */
+- (void)initWithFrame:(CGRect)frame window:(UIWindow *)window image:(UIImage *)image animationStyle:(DDLaunchPageAnimationStyle)style;
+```
 
 ### 使用方式:
+####1.下载项目或者下载项目中的DHLaunchDfPageHUD文件,将下载好的DHLaunchDfPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchDfPageHUD.h"头文件;
+####2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
+```objc
+[[DHLaunchDfPageHUD alloc] initWithFrame:[[UIScreen mainScreen] bounds] window:self.window image:[UIImage imageNamed:@"LaunchDfPageImage.bundle/DHLaunchDfPageHUD.png"] animationStyle:DDLaunchPageAnimationStyleFadeOut];
+```
+
+### 部分代码说明:
+####1.设置DHLaunchDfPageHUD消失的动画样式:
+```objc
+// 淡出效果
+DDLaunchPageAnimationStyleFadeOut
+// 淡入效果
+DDLaunchPageAnimationStyleFadeIn
+// 从中间剪开(实现中)
+DDLaunchPageAnimationStyleClip
+// 倾倒效果
+DDLaunchPageAnimationStyleToppleOver
+// 水波效果
+DDLaunchPageAnimationStyleWaterWave
+// 吸走效果
+DDLaunchPageAnimationStyleSuckEffect
+// 翻转效果
+DDLaunchPageAnimationStyleOglFlip
+// 立方体效果
+DDLaunchPageAnimationStyleCube
+// 推开效果
+DDLaunchPageAnimationStyleReveal
+// 翻书效果
+DDLaunchPageAnimationStylePageCurl
+// 合书效果
+DDLaunchPageAnimationStylePageUnCurl
+```
 
 ### 可能会用到的代码说明:
 
