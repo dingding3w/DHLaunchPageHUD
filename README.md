@@ -3,6 +3,21 @@
 ####声明: 部分图片来源于网络,如有涉及版权会马上删除,敬请谅解;
 ## (一)DHLaunchAdPageHUD - 有广告(Ad)
 ### 效果图展示:
+<table>
+	<tr>
+		<th>加载网络静态图片广告</th>
+		<th>加载网络动态图片广告</th>
+		<th>加载本地静态图片广告</th>
+		<th>加载本地动态图片广告</th>
+	</tr>
+
+	<tr>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-1.gif" width="300"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-2.gif" width="300"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-3.gif" width="300"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-4.gif" width="300"></td>
+	</tr>
+</table>
 
 ### 方法说明:
 ```objc
