@@ -54,6 +54,39 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
 
 ## (二)DHLaunchDfPageHUD - 无广告(Df)
 ### 效果图展示:
+<table>
+	<tr>
+		<th>FadeOut</th>
+		<th>FadeIn</th>
+		<th>ToppleOver</th>
+		<th>WaterWave</th>
+		<th>SuckEffect</th>
+	</tr>
+
+	<tr>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-01.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-02.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-03.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-04.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-05.gif" width="240"></td>
+	</tr>
+	
+	<tr>
+		<th>OglFlip</th>
+		<th>Cube</th>
+		<th>Reveal</th>
+		<th>PageCurl</th>
+		<th>PageUnCurl</th>
+	</tr>
+	
+	<tr>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-06.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-07.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-08.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-09.gif" width="240"></td>
+		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-10.gif" width="240"></td>
+	</tr>
+</table>
 
 ### 方法说明:
 ```objc
