@@ -10,6 +10,16 @@
 
 @interface DHGifImageOperation : UIView
 /**
+ *  通过图片Data数据第一个字节来获取图片扩展名(严谨)
+ */
++ (NSString *)dh_contentTypeForImageData:(NSData *)data;
+
+/**
+ *  通过图片URL的截取来获取图片的扩展名(不严谨)
+ */
++ (NSString *)dh_contentTypeForImageURL:(NSString *)url;
+
+/**
  *  自定义播放Gif图片(Path)
  *
  *  @param frame        位置和大小

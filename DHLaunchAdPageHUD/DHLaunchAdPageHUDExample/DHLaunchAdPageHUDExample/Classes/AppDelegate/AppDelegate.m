@@ -24,7 +24,7 @@
     NSString *adImageGifPath = [[NSBundle mainBundle] pathForResource:@"adImage3" ofType:@"gif"];
     
     DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adImageGifPath hideSkipButton:NO launchAdClickBlock:^{
-        NSLog(@"点了广告图片");
+        NSLog(@"[AppDelegate]:点了广告图片");
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     }];
     return YES;

@@ -64,7 +64,7 @@
             return image;
         }
     }
-    NSLog(@"请添加启动图片");
+    NSLog(@"[DHLaunchAdPageHUD]:请添加启动图片");
     return nil;
 }
 

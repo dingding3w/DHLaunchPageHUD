@@ -21,6 +21,49 @@
 @end
 
 @implementation DHGifImageOperation
+#pragma mark - 通过图片Data数据第一个字节来获取图片扩展名
++ (NSString *)dh_contentTypeForImageData:(NSData *)data {
+    uint8_t c;
+    [data getBytes:&c length:1];
+    switch (c) {
+        case 0xFF:
+            return @"jpeg";
+        case 0x89:
+            return @"png";
+        case 0x47:
+            return @"gif";
+        case 0x49:
+        case 0x4D:
+            return @"tiff";
+        case 0x52:
+            if ([data length] < 12) {
+                return nil;
+            }
+            NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+            if ([testString hasPrefix:@"RIFF"] && [testString hasSuffix:@"WEBP"]) {
+                return @"webp";
+            }
+            return nil;
+    }
+    return nil;
+}
+
+#pragma mark - 通过图片字符串的截取来获取图片的扩展名
++ (NSString *)dh_contentTypeForImageURL:(NSString *)url {
+    NSString *extensionName = url.pathExtension;
+    if ([extensionName.lowercaseString isEqualToString:@"jpeg"]) {
+        return @"jpeg";
+    }
+    if ([extensionName.lowercaseString isEqualToString:@"gif"]) {
+        return @"gif";
+    }
+    if ([extensionName.lowercaseString isEqualToString:@"png"]) {
+        return @"png";
+    }
+    return nil;
+}
+
+#pragma mark - 自定义播放Gif图片(Path)
 - (id)initWithFrame:(CGRect)frame gifImagePath:(NSString *)gifImagePath {
     self = [super initWithFrame:frame];
     if (self) {
@@ -33,6 +76,7 @@
     return self;
 }
 
+#pragma mark - 自定义播放Gif图片(Data)(本地+网络)
 - (id)initWithFrame:(CGRect)frame gifImageData:(NSData *)gifImageData {
     self = [super initWithFrame:frame];
     if (self) {
@@ -56,19 +100,18 @@
         static dispatch_once_t onceToken;
         //只执行一次
         dispatch_once(&onceToken, ^{
-            NSLog(@"请检测网络或者http协议");
+            NSLog(@"[DHGifImageOperation]:请检测网络或者http协议");
         });
     }
 }
 
 - (void)removeFromSuperview {
-    NSLog(@"removeFromSuperview");
     [timer invalidate];
     timer = nil;
     [super removeFromSuperview];
 }
 
-#pragma mark - 加载本地GIF图片无需设置NSTimer
+#pragma mark - 加载本地GIF图片无需设置NSTimer(自定义播放Gif图片(Name))
 /**< 使用案例: [self.XXX addSubview:[[DHGifImageOperation alloc] initWithFrame:self.adFrame gifImageName:@"XXX.gif"]]; */
 - (id)initWithFrame:(CGRect)frame gifImageName:(NSString *)gifImageName {
     self = [super initWithFrame:frame];
@@ -92,6 +135,6 @@
 }
 
 - (void)activiTap:(UITapGestureRecognizer*)recognizer{
-    NSLog(@"activiTap:recognizer");
+    NSLog(@"[DHGifImageOperation]:activiTap:recognizer");
 }
 @end
