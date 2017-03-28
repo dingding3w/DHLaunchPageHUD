@@ -10,7 +10,6 @@
 		<th>加载本地静态图片广告</th>
 		<th>加载本地动态图片广告</th>
 	</tr>
-
 	<tr>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-1.gif" width="300"></td>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchAdPageHUD/DesignSketchGIF/Untitled-2.gif" width="300"></td>
@@ -62,7 +61,6 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
 		<th>WaterWave</th>
 		<th>SuckEffect</th>
 	</tr>
-
 	<tr>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-01.gif" width="240"></td>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-02.gif" width="240"></td>
@@ -70,7 +68,6 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-04.gif" width="240"></td>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-05.gif" width="240"></td>
 	</tr>
-	
 	<tr>
 		<th>OglFlip</th>
 		<th>Cube</th>
@@ -78,7 +75,6 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
 		<th>PageCurl</th>
 		<th>PageUnCurl</th>
 	</tr>
-	
 	<tr>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-06.gif" width="240"></td>
 		<td><img src="https://github.com/dingding3w/DHLaunchPageHUD/blob/master/DHLaunchDfPageHUD/DesignSketchGIF/Untitled-07.gif" width="240"></td>
