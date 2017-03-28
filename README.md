@@ -1,6 +1,6 @@
 # DHLaunchPageHUD
 ### 一行代码迅速集成APP启动页,包括有广告(Ad)和无广告(Df)两种样式,省掉冗余的代码,集成性高,使用方便;
-####声明: 部分图片来源于网络,如有涉及版权会马上删除,敬请谅解;
+#### 声明: 部分图片来源于网络,如有涉及版权会马上删除,敬请谅解;
 ## (一)DHLaunchAdPageHUD - 有广告(Ad)
 ### 效果图展示:
 <table>
@@ -35,8 +35,8 @@
 ```
 
 ### 使用方式:
-####1.下载项目或者下载项目中的DHLaunchAdPageHUD文件,将下载好的DHLaunchAdPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchAdPageHUD.h"头文件;
-####2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
+#### 1.下载项目或者下载项目中的DHLaunchAdPageHUD文件,将下载好的DHLaunchAdPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchAdPageHUD.h"头文件;
+#### 2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
 ```objc
 NSString *adImageJPGUrl = @"http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg";
 NSString *adimageGIFUrl = @"http://img.ui.cn/data/file/3/4/6/210643.gif";
@@ -98,14 +98,14 @@ DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMak
 ```
 
 ### 使用方式:
-####1.下载项目或者下载项目中的DHLaunchDfPageHUD文件,将下载好的DHLaunchDfPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchDfPageHUD.h"头文件;
-####2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
+#### 1.下载项目或者下载项目中的DHLaunchDfPageHUD文件,将下载好的DHLaunchDfPageHUD文件拖拽到自己的工程文件夹中,并在application:didFinishLaunchingWithOptions:方法中导入#import "DHLaunchDfPageHUD.h"头文件;
+#### 2.初始化"DHLaunchAdPageHUD"一行代码就可以搞定,代码如下:
 ```objc
 [[DHLaunchDfPageHUD alloc] initWithFrame:[[UIScreen mainScreen] bounds] window:self.window image:[UIImage imageNamed:@"LaunchDfPageImage.bundle/DHLaunchDfPageHUD.png"] animationStyle:DDLaunchPageAnimationStyleFadeOut];
 ```
 
 ### 部分代码说明:
-####1.设置DHLaunchDfPageHUD消失的动画样式:
+#### 1.设置DHLaunchDfPageHUD消失的动画样式:
 ```objc
 // 淡出效果
 DDLaunchPageAnimationStyleFadeOut
